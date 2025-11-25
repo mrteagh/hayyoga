@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\http\Controllers\MainController;
 
 Route::get('/', function () {
     $aulas = [
@@ -22,4 +23,7 @@ Route::get('/', function () {
         ],
     ];
     return view('index', ['aulas'=> $aulas]);
+});
+Route::get('/',function(){
+    return view('index');
 });
