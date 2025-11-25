@@ -15,7 +15,7 @@
     <div class="container">
         <div class="logo">
             <a href="home.html">
-                <img src="{{ Vite::asset('resources/images/logoheader.jpeg') }}" alt="logo HayYoga">
+                <img src="{{ Vite::asset('resources/imagens/logoheader.jpeg') }}" alt="logo HayYoga">
             </a>
         </div>
         <div class="brand">HayYoga</div>
@@ -29,7 +29,7 @@
     </div>
 </header>
 
-@vite(['resources/css/app.css','resources/js/app.js','resources/css/styleHY.css','resources/images/logoheader.jpeg'])
+@vite(['resources/css/app.css','resources/js/app.js','resources/css/styleHY.css','resources/imagens/logoheader.jpeg','resources/css/styleMain.css'])
 
 <body>
     
