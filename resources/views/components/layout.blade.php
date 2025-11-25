@@ -32,13 +32,7 @@
 @vite(['resources/css/app.css','resources/js/app.js','resources/css/styleHY.css','resources/images/logoheader.jpeg'])
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
+    
 
     {{ $slot }}
 
