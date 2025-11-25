@@ -20,7 +20,7 @@
                <a href="home.html">
                    Sair
                </a>
-
            </form>
        </div>
+
    </x-layout>

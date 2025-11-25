@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     background-color: #fdfdfd;
     color: #000000;
 
@@ -10,32 +10,30 @@ body {
 
 
 header {
-
     position: sticky;
     top: 0;
     background-color: #000000;
     color: #FFFFFF;
     padding: 10px 20px;
     z-index: 1000;
-
-
 }
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 100%;
+    position: relative; /* necessário para o absolute da brand */
 }
 
 header .brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
-    padding-left: 25rem;
 }
-
 nav a,
 nav button {
     margin-left: 10px;
@@ -94,6 +92,7 @@ main {
         width: 90vw;
         margin-top: 0px;
         margin-bottom: 3rem;
+        background-color: #6db619;
 
         p {
             font-size: 14pt;
@@ -683,7 +682,7 @@ h3 {
 
 }
 
-#fotos {
+#fotoGrande {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -694,6 +693,14 @@ h3 {
     img {
         border-radius: 10px;
     }
+}
+
+#fotosMenores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
 }
 
 #investimento {

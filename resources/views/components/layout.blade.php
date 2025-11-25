@@ -9,13 +9,15 @@
     @else
     <title>HayYoga</title>
     @endisset
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+</head>
 <header>
     <div class="container">
         <div class="logo">
             <a href="">
-                <img src="{{ Vite::asset('resources/images/logoheader.jpeg') }}" alt="logo HayYoga">
+                <img src="{{ Vite::asset('resources/imagens/logoheader.jpeg') }}" alt="logo HayYoga">
             </a>
         </div>
         <div class="brand">HayYoga</div>
@@ -29,7 +31,7 @@
     </div>
 </header>
 
-@vite(['resources/css/app.css','resources/js/app.js','resources/images/logoheader.jpeg'])
+@vite(['resources/css/app.css','resources/js/app.js','resources/imagens/logoheader.png'])
 
 <body>
     

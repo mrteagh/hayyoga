@@ -1,18 +1,21 @@
 <x-layout>
     @vite(['resources/css/styleyoga.css'])
-        <main>
-            <section class="hero">
-                <article class="oYoga">
-                    <h1>O YOGA</h1>
+    <main>
+        <section class="hero">
+            <div class="oYoga fs-3 p-0 vw-100 p-3">
+                <h1 class="d-flex fw-bold display-1 p-3">O YOGA</h1>
+                <p>
                     O Yoga é um poderoso instrumento de crescimento e transformação pessoal que através do autoconhecimento
                     e compreensão do ser humano e da vida, propõe um estilo de vida consciente, nos direcionando a um estado
-                    natural de liberdade interior, plenitude e felicidade. <br>
+                    natural de liberdade interior, plenitude e felicidade.
+                </p>
 
-
+                <p>
                     Esse curso é uma jornada de autoconhecimento através de um programa de prática, estudo e aprofundamento
-                    em Yoga, vivenciando e compreendendo as diversas técnicas. <br>
+                    em Yoga, vivenciando e compreendendo as diversas técnicas.
+                </p>
 
-                </article>
+            </div>
                 <div class="cards">
 
                     <div class="card1">
@@ -401,12 +404,12 @@
                     </div>
                 </section>
 
-                <section id="fotos">
-                    <div>
+                <section>
+                    <div id="fotosMenores">
                         <img src="{{ Vite::asset('resources/imagens/hay.png') }}" alt="">
                         <img src="{{ Vite::asset('resources/imagens/ju.png') }}" alt="">
                     </div>
-                    <div>
+                    <div id="fotoJuVermelho">
                         <img src="{{ Vite::asset('resources/imagens/juVermelho.png') }}" alt="">
                     </div>
                 </section>
@@ -488,7 +491,7 @@
                 </section>
 
                 <section class="aulasGratis">
-                    <h2>AULAS GRATIS</h2>
+                    <h2 class="">AULAS GRÁTIS</h2>
                     <div class="grid-aulasGratis">
 
                         <div class="item"><iframe width="560" height="315"
@@ -669,26 +672,26 @@
                     </div>
                 </section>
 
-            </section>
+        </section>
 
-        </main>
+    </main>
 
-        <script>
-            const modal = document.getElementById("loginModal");
-            const btn = document.getElementById("loginBtn");
-            const span = document.getElementsByClassName("close")[0];
+    <script>
+        const modal = document.getElementById("loginModal");
+        const btn = document.getElementById("loginBtn");
+        const span = document.getElementsByClassName("close")[0];
 
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-            span.onclick = function() {
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
                 modal.style.display = "none";
             }
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
+        }
+    </script>
 
 </x-layout>
