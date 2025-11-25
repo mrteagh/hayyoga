@@ -2,7 +2,13 @@
     
    <div class="container">
             <h1>Cadastro de Usuário</h1>
-            <form action="#" method="post">
+
+            @if(session('sucesso'))
+            <p style="color: green;">{{ session('sucesso') }}</p>
+            @endif
+
+            <form action="{{ route('cadastro.salvar') }}" method="POST">
+                @csrf
                 <label for="nome">Nome completo:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -17,9 +23,7 @@
 
                 <button type="submit">Cadastrar</button>
 
-                <a href="home.html">
-                    Sair
-                </a>
+                <a href="/">Sair</a>
 
             </form>
         </div>
