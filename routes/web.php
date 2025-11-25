@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\http\Controllers\MainController;
 
 Route::get('/', function () {
     $aulas = [
@@ -23,7 +24,13 @@ Route::get('/', function () {
     ];
     return view('index', ['aulas'=> $aulas]);
 });
+<<<<<<< HEAD
 
 Route::get('/reiki', function () {
     return view('reiki');
 });
+=======
+Route::get('/',function(){
+    return view('index');
+});
+>>>>>>> 8cc3436216132cc877d012c955c55470a8d85c67
