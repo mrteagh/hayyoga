@@ -23,3 +23,7 @@ Route::get('/', function () {
     ];
     return view('index', ['aulas'=> $aulas]);
 });
+
+Route::get('/reiki', function () {
+    return view('reiki');
+});
