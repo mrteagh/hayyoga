@@ -16,7 +16,7 @@
                 <div class="cards">
 
                     <div class="card1">
-                        <img src="{{ Vite::asset('resources/images/ju.png') }}" alt="Descrição da imagem">
+                        <img src="{{ Vite::asset('resources/imagens/ju.png') }}" alt="Descrição da imagem">
                         <div class="card1-content">
                             <h2>Nosso Objetivo</h2>
 
@@ -37,7 +37,7 @@
                     </div>
 
                     <div class="card2">
-                        <img src="{{ Vite::asset('resources/images/1446.jpg') }}" alt="Descrição da imagem">
+                        <img src="{{ Vite::asset('resources/imagens/1446.jpg') }}" alt="Descrição da imagem">
                         <div class="card2-content">
                             <h2>Quem pode participar</h2>
 
@@ -89,7 +89,7 @@
 
                     <div>
                         <div id="caixa">
-                            <img src="{{ Vite::asset('resources/images/bracoscruzados.png') }}" alt="Seu navegador nao carrega essa imagem">
+                            <img src="{{ Vite::asset('resources/imagens/bracoscruzados.png') }}" alt="Seu navegador nao carrega essa imagem">
                         </div>
 
                         <div id="texto">
@@ -135,7 +135,7 @@
 
                 <section id="abrath">
 
-                    <img src="{{ Vite::asset('resources/images/abrath-1.png') }}" alt="Logo da ABRATH">
+                    <img src="{{ Vite::asset('resources/imagens/abrath-1.png') }}" alt="Logo da ABRATH">
                     <p>Terapeuta habilitado</p>
 
                 </section>
@@ -167,7 +167,7 @@
                     <div class="cards2">
 
                         <div class="card3">
-                            <img src="{{ Vite::asset('resources/images/ju.png') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/ju.png') }}" alt="Descrição da imagem">
                             <div class="card3-content">
                                 <h2>Estudo dos Angas</h2>
 
@@ -201,7 +201,7 @@
                         </div>
 
                         <div class="card4">
-                            <img src="{{ Vite::asset('resources/images/1446.jpg') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/1446.jpg') }}" alt="Descrição da imagem">
                             <div class="card4-content">
                                 <h2>Práticas do tantra</h2>
 
@@ -234,7 +234,7 @@
                     <div class="cards3">
 
                         <div class="card5">
-                            <img src="{{ Vite::asset('resources/images/ju.png') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/ju.png') }}" alt="Descrição da imagem">
                             <div class="card5-content">
                                 <h2>ANATOMIA , BIOMECANICA E FISIOLOGIA PARA O YOGA
                                     <br>SANSKARAS (CRENÇAS LIMITANTES), ANATOMIA SUTIL
@@ -262,7 +262,7 @@
                         </div>
 
                         <div class="card6">
-                            <img src="{{ Vite::asset('resources/images/1446.jpg') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/1446.jpg') }}" alt="Descrição da imagem">
                             <div class="card6-content">
                                 <h2>FORMAS DE ABORDAGEM DO YOGA <br> DESTE CURSO</h2>
 
@@ -315,18 +315,18 @@
                 <section id="acompanhamento">
 
                     <div>
-                        <img src="{{ Vite::asset('resources/images/hay_meditando400.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/hay_meditando400.png') }}" alt="">
                         <br>Pre-requisito para participar
                         <br><strong>QUERER</strong>
                     </div>
                     <div>
-                        <img src="{{ Vite::asset('resources/images/curso_online.jpg') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/curso_online.jpg') }}" alt="">
                         <br>Formato do curso
                         <br><strong>HIBRIDO</strong>
                         <br>AULAS TEORICAS ONLINE E PRATICAS PRESENCIAIS
                     </div>
                     <div>
-                        <img src="{{ Vite::asset('resources/images/diploma.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/diploma.png') }}" alt="">
                         <br>CERTIFICAÇÃO COM 100 HORAS AULAS
                         <br>CONTEUDO TEORICO E PRATICOS
                     </div>
@@ -358,7 +358,7 @@
 
                 <section id="avaliacoes">
                     <div>
-                        <img src="{{ Vite::asset('resources/images/hay_yoga_mao1.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/hay_yoga_mao1.png') }}" alt="">
                     </div>
                     <div>
                         Avaliações para quem deseja <strong> LECIONAR</strong>
@@ -385,7 +385,7 @@
                 <section id="praticaPessoal">
 
                     <div>
-                        <img src="{{ Vite::asset('resources/images/hay.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/hay.png') }}" alt="">
                     </div>
                     <div>
                         <h3>SUA PRATICA PESSOAL</h3>
@@ -403,11 +403,11 @@
 
                 <section id="fotos">
                     <div>
-                        <img src="{{ Vite::asset('resources/images/hay.png') }}" alt="">
-                        <img src="{{ Vite::asset('resources/images/ju.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/hay.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/ju.png') }}" alt="">
                     </div>
                     <div>
-                        <img src="{{ Vite::asset('resources/images/juVermelho.png') }}" alt="">
+                        <img src="{{ Vite::asset('resources/imagens/juVermelho.png') }}" alt="">
                     </div>
                 </section>
 
@@ -444,7 +444,7 @@
                 <section class="quem-sou">
 
                     <div class="content">
-                        <img src="{{ Vite::asset('resources/images/fotoinstrutora.png') }}" alt="Foto da instrutora">
+                        <img src="{{ Vite::asset('resources/imagens/fotoinstrutora.png') }}" alt="Foto da instrutora">
 
                         <div class="textoQuemSou">
                             <h2>QUEM SOU</h2>
@@ -654,16 +654,16 @@
                     <div class="redes">
 
                         <a href="https://www.youtube.com/@flowyogadespertar" target="_blank" rel="external">
-                            <img src="{{ Vite::asset('resources/images/icons8-logotipo-do-youtube-94.png') }}" alt="Logo Youtube">
+                            <img src="{{ Vite::asset('resources/imagens/icons8-logotipo-do-youtube-94.png') }}" alt="Logo Youtube">
                             <p>Despertar Yoga</p>
                         </a>
                         <a href="https://www.instagram.com/hayyoga/" target="_blank" rel="external">
-                            <img src="{{ Vite::asset('resources/images/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
+                            <img src="{{ Vite::asset('resources/imagens/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
                             <p>@hayyoga</p>
                         </a>
 
                         <a href="https://www.instagram.com/terapiandoavidacmagia/" target="_blank" rel="external">
-                            <img src="{{ Vite::asset('resources/images/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
+                            <img src="{{ Vite::asset('resources/imagens/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
                             <p>@terapiandoavidacommagia</p>
                         </a>
                     </div>

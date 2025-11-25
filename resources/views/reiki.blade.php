@@ -1,10 +1,10 @@
 <x-layout>
+    @vite(['resources/css/stylereiki.css'])
 <body>
     
     <section class="fotoHeader">
         <div class="yogadespertar">
-            <img src="Imagem/pessoa-realizando-terapia-de-reiki.jpg" alt="Imagem de uma Yogui praticando assanas">
-
+            <img src = "{{ Vite::asset('resources/imagens/pessoa-realizando-terapia-de-reiki.jpg') }}" alt="Imagem de uma Yogui praticando assanas">
         </div>
     </section>
     <main>
@@ -146,10 +146,8 @@
                 <section id="mikauUsui">
 
                     <div>
-                        <img src="Imagem/mikau.jpg" alt="Seu navegador nao carrega essa imagem">
+                        <img src = "{{ Vite::asset('resources/imagens/mikau.jpg') }}" alt="Seu navegador nao carrega essa imagem">>
                         <div id="texto">
-
-
 
                             <strong>Mikau Usui</strong>
                             <p>Mikao Usui, ( 15 de agosto de 1865 — Fukuyama, 9 de março de 1926),
@@ -472,17 +470,16 @@
 
             <section id="fotos">
                 <div>
-                    <img src="Imagem/reiki1.jpeg" alt="">
-                    <img src="Imagem/reiki2.jpeg" alt="">
+                    <img src = "{{ Vite::asset('resources/imagens/reiki1.jpeg') }}">
+                    <img src = "{{ Vite::asset('resources/imagens/reiki2.jpeg') }}">
                 </div>
                 <div>
-                    <img src="Imagem/reiki3.jpeg" alt="">
-                    <img src="Imagem/reiki4.jpeg" alt="">
+                    <img src = "{{ Vite::asset('resources/imagens/reiki3.jpeg') }}">
+                    <img src = "{{ Vite::asset('resources/imagens/reiki4.jpeg') }}">
                 </div>
                 <div>
-                    <img src="Imagem/reiki5.jpeg" alt="">
-                    <img src="Imagem/reiki6.jpeg" alt="">
-
+                    <img src = "{{ Vite::asset('resources/imagens/reiki5.jpeg') }}">
+                    <img src = "{{ Vite::asset('resources/imagens/reiki6.jpeg') }}">
                 </div>
             </section>
 
@@ -516,7 +513,7 @@
             <section class="quem-sou">
                 <h2>QUEM SOU</h2>
                 <div class="content">
-                    <img src="Imagem/fotoinstrutora.png" alt="Foto da instrutora">
+                    <img src = "{{ Vite::asset('resources/imagens/fotoinstrutora.png') }}">
                     <p>
                         Desde 2004 leciona e pratica Yoga
                         Praticante de Artes Marciais e estudante de várias filosofias orientais, encontrou no Yoga o seu
@@ -559,7 +556,7 @@
                 <h3>DEPOIMENTOS</h3>
 
                 <video width="640" height="360" controls>
-                    <source src="Imagem/depoimento reiki 1.mp4" type="video/mp4">
+                    <source src = "{{ Vite::asset('resources/imagens/depoimento reiki 1.mp4') }}">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
 
@@ -589,16 +586,16 @@
                 <div class="redes">
 
                     <a href="https://www.youtube.com/@flowyogadespertar" target="_blank" rel="external">
-                        <img src="Imagem/icons8-logotipo-do-youtube-94.png" alt="Logo Youtube">
+                        <img src = "{{ Vite::asset('resources/imagens/icons8-logotipo-do-youtube-94.png') }}">
                         <p>Despertar Yoga</p>
                     </a>
                     <a href="https://www.instagram.com/hayyoga/" target="_blank" rel="external">
-                        <img src="Imagem/icons8-instagram-logo-94.png" alt="Logo Instagram">
+                        <img src = "{{ Vite::asset('resources/imagens/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
                         <p>@hayyoga</p>
                     </a>
 
                     <a href="https://www.instagram.com/terapiandoavidacmagia/" target="_blank" rel="external">
-                        <img src="Imagem/icons8-instagram-logo-94.png" alt="Logo Instagram">
+                        <img src = "{{ Vite::asset('resources/imagens/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
                         <p>@terapiandoavidacommagia</p>
                     </a>
                 </div>

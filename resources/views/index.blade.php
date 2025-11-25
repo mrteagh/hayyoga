@@ -1,5 +1,5 @@
 <x-layout>
-
+    @vite(['resources/css/styleMain.css'])
     <body>
 
         <section class="fotoHeader">
@@ -39,7 +39,7 @@
 
                 <div class="content">
                     <img src="{{Vite::asset('resources/imagens/fotoinstrutora.png')}}" alt="Foto da instrutora">
-                    
+
 
                     <div class="textoQuemSou">
                         <h2>QUEM SOU</h2>
