@@ -25,8 +25,14 @@ Route::get('/', function () {
     return view('index', ['aulas'=> $aulas]);
 });
 
+
 Route::get('/cadastro', function () {
     return view('cadastro');
+});
+
+
+Route::get('/reiki', function () {
+    return view('reiki');
 });
 Route::get('/',function(){
     return view('index');
@@ -34,10 +40,4 @@ Route::get('/',function(){
 
 Route::get('/yoga', function(){
     return view('yoga');
-});
-Route::get('/meditacao', function(){
-    return view('meditacao');
-});
-Route::get('/reiki', function(){
-    return view('reiki');
 });
