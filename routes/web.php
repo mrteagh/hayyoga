@@ -25,6 +25,12 @@ Route::get('/', function () {
     return view('index', ['aulas'=> $aulas]);
 });
 
+Route::get('/cadastro', function () {
+    return view('cadastro');
+});
+=======
+<<<<<<< HEAD
+
 Route::get('/reiki', function () {
     return view('reiki');
 });
@@ -35,3 +41,4 @@ Route::get('/',function(){
 Route::get('/yoga', function(){
     return view('yoga');
 });
+>>>>>>> c5a47ff590c7198c960d6faae50194bff84c4262
