@@ -17,8 +17,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="home.html">
-
+                <a href="/">
                     <img src="{{ Vite::asset('resources/imagens/logoheader.jpeg') }}" alt="logo HayYoga">
                 </a>
             </div>

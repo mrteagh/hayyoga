@@ -30,10 +30,6 @@ Route::get('/cadastro', function () {
     return view('cadastro');
 });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 32254f0ae4fd7d527a782652cf2b0014fa1ad7d8
 
 Route::get('/reiki', function () {
     return view('reiki');
