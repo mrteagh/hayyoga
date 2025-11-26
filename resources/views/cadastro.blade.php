@@ -10,16 +10,16 @@
             <form action="{{ route('cadastro.salvar') }}" method="POST">
                 @csrf
                 <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="name" required>
 
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+                <input type="password" id="senha" name="password" required>
 
                 <label for="confirmar-senha">Confirmar Senha:</label>
-                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+                <input type="password" id="confirmar-senha" name="password-senha" required>
 
                 <button type="submit">Cadastrar</button>
 
