@@ -13,21 +13,16 @@
                     <h1>Transforme sua vida com Yoga e Reiki!
                         <br>Aprenda a se reconectar com sua energia vital!
                     </h1>
-                    <!--
-                <div class="cta-buttons">
-                    <a href="#" class="btn">Acesse</a>
-                    <a href="inscreva-se.html" class="btn">Inscreva-se</a>
-                </div>
-                !-->
+                 
                 </div>
             </section>
             <section id="cursos">
                 <div class="caixa">
-                    <a href="yoga.html">
+                    <a href="/yoga">
                         <img src="{{Vite::asset('resources/imagens/hay_yoga_mao1.png')}}" alt="Seu navegador nao carrega esta imagem">
                     </a>
                 </div>
-                <a href="reiki.html">
+                <a href="/reiki">
                     <div class="caixa">
                         <img src="{{Vite::asset('resources/imagens/hay_reiki_mao1.png')}}" alt="Seu navegador nao carrega esta imagem">
                     </div>
@@ -81,28 +76,9 @@
                     </div>
                 </div>
             </section>
-            <h2>MINHAS REDES SOCIAIS</h2>
+            
 
-            <section class="minhasRedes">
-
-                <div class="redes">
-
-                    <a href="https://www.youtube.com/@flowyogadespertar" target="_blank" rel="external">
-                        <img src="Imagem/icons8-logotipo-do-youtube-94.png" alt="Logo Youtube">
-                        <p>Despertar Yoga</p>
-                    </a>
-                    <a href="https://www.instagram.com/hayyoga/" target="_blank" rel="external">
-                        <img src="Imagem/icons8-instagram-logo-94.png" alt="Logo Instagram">
-                        <p>@hayyoga</p>
-                    </a>
-
-                    <a href="https://www.instagram.com/terapiandoavidacmagia/" target="_blank" rel="external">
-                        <img src="Imagem/icons8-instagram-logo-94.png" alt="Logo Instagram">
-                        <p>@terapiandoavidacommagia</p>
-                    </a>
-                </div>
-
-            </section>
+            
             <!--
         <section class="testemunha">
             <div class="testimonial">
