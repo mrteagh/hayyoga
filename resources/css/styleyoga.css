@@ -312,22 +312,11 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    
     border-radius: 50px;
-    background-color: #ffffff;
     padding-left: 1rem;
-
-    #caixa {
-        width: 300px;
-        height: 400px;
-        background-image: radial-gradient(circle, #fffb00, #f68700);
-        /* Exemplo de gradiente */
-        border-radius: 200px;
-        color: white;
-        /* Para a cor do texto ser visível */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+}
+ 
 
     #texto {
         display: flex;
@@ -341,7 +330,9 @@ h3 {
         align-items: center;
         text-align: left;
     }
-}
+
+    
+
 
 
 #certificacao {
