@@ -1,63 +1,22 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../typographyFonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Montserrat";
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: Arial, sans-serif; */
     background-color: #fdfdfd;
     color: #000000;
 
 }
-
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    position: relative; /* necessário para o absolute da brand */
-}
-
-header .brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: center;
-}
-nav a,
-nav button {
-    margin-left: 10px;
-    color: #FFFFFF;
-    text-decoration: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-nav button {
-    background-color: #F68700;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav button:hover {
-    background-color: #FFFB00;
-    color: #000;
-}
-
-
 
 main {
 
@@ -67,7 +26,29 @@ main {
 
 }
 
+/* Impede rolagem horizontal */
+html,
+body {
+    overflow-x: hidden;
+}
 
+/* Garante que imagens nunca ultrapassem o container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Iframes responsivos */
+iframe {
+    max-width: 100%;
+    display: block;
+}
+
+/* Containers com largura exagerada */
+.vw-100 {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .hero {
     background: url('img/hero.jpg') no-repeat center center/cover;
@@ -88,11 +69,9 @@ main {
         font-size: 14pt;
         text-align: center;
         padding-top: 0px;
-        border-radius: 10px;
-        width: 90vw;
         margin-top: 0px;
         margin-bottom: 3rem;
-        background-color: #6db619;
+        background-color: #e6f2f8;
 
         p {
             font-size: 14pt;
@@ -300,38 +279,40 @@ h2 {
 h3 {
     margin-top: 5rem;
     font-size: 16pt;
-    color: #f68700;
     width: 90vw;
 }
 
 
-
+#vamosComecar {
+    background-color: #e6f2f8;
+    box-shadow: 100px;
+}
 
 #vamosComecar div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    
+
     border-radius: 50px;
     padding-left: 1rem;
 }
- 
 
-    #texto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: x-large;
-    }
 
-    li {
-        font-size: 1.5rem;
-        align-items: center;
-        text-align: left;
-    }
+#texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+}
 
-    
+li {
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: left;
+}
+
+
 
 
 
@@ -354,7 +335,7 @@ h3 {
     font-size: 2rem;
 }
 
-.cronograma {
+/* .cronograma {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -371,6 +352,13 @@ h3 {
     }
 
 
+} */
+#jornadaAutoconhecimento {
+    color: #e6f2f8;
+}
+
+#cronograma {
+    color: #000000;
 }
 
 .cards2 {
@@ -992,82 +980,36 @@ h3 {
 
 }
 
-.grid-aulasGratis {
-    display: grid;
-    /* ativa o modo grid */
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 colunas iguais */
-    gap: 60px;
-    /* espaço entre os itens */
 
-    .item {
-        background-color: rgb(241, 241, 241);
-        color: white;
-        align-items: center;
-        align-content: center;
-        border-style: solid;
-        border-color: #f1f1f1;
-        padding: 20px;
-        font-size: 20px;
-        border-radius: 10px;
-        
-    }
-
+#aulasGratis {
+    background-color: #e6f2f8;
 }
 
-
-
+.grid-aulasGratis,
 .grid-cortes {
     display: grid;
-    /* ativa o modo grid */
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 colunas iguais */
-    gap: 20px;
-    /* espaço entre os itens */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    /* espaço entre os vídeos */
+    justify-items: center;
+    /* centralizar itens dentro da célula */
+    padding: 1rem;
+}
 
-    .item {
-        background-color: rgb(241, 241, 241);
-        color: white;
-        text-align: center;
-        padding: 20px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
+.grid-aulasGratis iframe,
+.grid-cortes iframe {
+    width: 100%;
+    max-width: 560px;
+    /* largura máxima do vídeo */
+    aspect-ratio: 16 / 9;
+    /* manter proporção dos vídeos */
+    border: none;
 }
 
 h2 {
     text-align: center;
 }
 
-.minhasRedes {
-    border: #000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 60PX;
-
-
-}
-
-.redes {
-    border: #000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 5rem;
-
-    p {
-        text-decoration: none;
-        color: #000;
-    }
-
-
-}
 
 .testemunha {
     padding: 40px 20px;
@@ -1271,7 +1213,7 @@ footer .social-icons a {
 /* Conteúdo do modal */
 .modal3-conteudo {
     background: #fff;
-    width: 400px;
+    width: 50vw;
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
