@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\http\Controllers\MainController;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\CadastroController;
 
 Route::get('/', function () {
     $aulas = [
@@ -22,12 +23,7 @@ Route::get('/', function () {
             'text' => 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         ],
     ];
-    return view('index', ['aulas'=> $aulas]);
-});
-
-
-Route::get('/cadastro', function () {
-    return view('cadastro');
+    return view('index', ['aulas' => $aulas]);
 });
 
 
@@ -44,3 +40,9 @@ Route::get('/yoga', function(){
     return view('yoga');
 });
 
+Route::get('/', [MainController::class, 'home']);
+Route::get('/cadastro', [MainController::class, 'cadastro']);
+Route::get('/reiki', [MainController::class, 'reiki']);
+Route::get('/yoga', [MainController::class, 'yoga']);
+
+Route::post('/cadastro/salvar', [CadastroController::class, 'salvar'])->name('cadastro.salvar');

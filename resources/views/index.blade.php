@@ -1,5 +1,5 @@
 <x-layout>
-
+    @vite(['resources/css/styleMain.css'])
     <body>
 
         <section class="fotoHeader">

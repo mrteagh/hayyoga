@@ -10,7 +10,6 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/css/styleyoga.css',
                 'resources/css/styleMain.css'],
-            
             refresh: true,
         }),
         tailwindcss(),
