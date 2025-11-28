@@ -42,19 +42,20 @@
     {{ $slot }}
 
     <footer>
-        <h2>MINHAS REDES SOCIAIS</h2>
-        <section class="minhasRedes">
+        
+        <section class="minhasRedes d-flex justify-content-center flex-column">
+            <h2 class=" container m-0 p-3 fs-1">MINHAS REDES SOCIAIS</h2>
 
-            <div class="redes">
+            <div class="redes p-3 m-3">
 
 
                 <a href="https://www.youtube.com/@flowyogadespertar" target="_blank" rel="external">
                     <img src="{{Vite::asset('resources/imagens/icons8-logotipo-do-youtube-94.png')}}" alt="Seu navegador nao carrega esta imagem">
-                    <p>youtube</p>
+                    <p>Youtube</p>
                 </a>
                 <a href="https://www.instagram.com/hayyoga/" target="_blank" rel="external">
                     <img src="{{Vite::asset('resources/imagens/icons8-instagram-logo-94.png')}}" alt="Seu navegador nao carrega esta imagem">
-                    <p>yoga</p>
+                    <p>Yoga</p>
                 </a>
 
                 <a href="https://www.instagram.com/terapiandoavidacmagia/" target="_blank" rel="external">

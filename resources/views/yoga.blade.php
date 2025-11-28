@@ -1,8 +1,9 @@
 <x-layout>
-
     @vite(['resources/css/styleyoga.css'])
-    <main class="m-0">
-        <section class="hero">
+    <main class="m-0 p-0 ">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+        <section class="hero m-0 p-0">
             <div class="oYoga fs-3 p-5">
                 <h1 class="fw-bold display-1 vw-100 display-1 p-3">O YOGA</h1>
                 <p class="fs-3 m-4 p-3">
@@ -17,7 +18,7 @@
                 </p>
 
             </div>
-            <div class="cards">
+            <div class="cards mb-5">
 
                 <div class="card1">
                     <img src="{{ Vite::asset('resources/imagens/ju.png') }}" alt="Descrição da imagem">
@@ -76,7 +77,7 @@
             </div>
 
             <div id="jornadaAutoconhecimento" class="">
-                <h3 class="fw-bold fs-3 p-3 bg-black vw-100">Não é apenas um curso, é uma jornada através do autoconhecimento!</h3>
+                <p class="fw-bold fs-3 p-3 bg-black vw-100">Não é apenas um curso, é uma jornada através do autoconhecimento!</p>
             </div>
 
             <section id="meditacao">
@@ -321,47 +322,44 @@
 
                 </div>
 
-
-
-
-
-                <section id="areaAtuacao" class="">
-
-                    <H3>AREAS DE ATUAÇÃO</H3>
-                    <UL>
-                        <LI>AUTO CONHECIMENTO</LI>
-                        <LI>GRUPOS E RODAS</LI>
-                        <LI>ACADEMIA</LI>
-                        <LI>EMPRESAS </LI>
-                        <LI>INDIVIDUAL </LI>
-                        <LI>CRIANÇAS E GESTANTES.</LI>
-                    </UL>
-
-                    <P>QUESTIONARIOS, EXERCICIOS PRATICOS E TEORICOS (OPICIONAL).</P>
-
-                </section>
-
         </section>
 
-        <div class="cta-buttons">
+        <section id="areaAtuacao" class="shadow-lg vw-100">
+
+            <h1 class="p-3 text-black">AREAS DE ATUAÇÃO</h1>
+            <UL class="list-group list-group-flush list-group-numbered vw-100">
+                <LI class="list-group-item">Auto conhecimento</LI>
+                <LI class="list-group-item">Grupos e rodas</LI>
+                <LI class="list-group-item">Academia</LI>
+                <LI class="list-group-item">Empresas</LI>
+                <LI class="list-group-item">Individual </LI>
+                <LI class="list-group-item">Crianças e gestantes</LI>
+                <li class="list-group-item">Questionários, exercícios práticos e teóricos (opcional)</li>
+            </UL>
+
+           <div class="cta-buttons mt-5 m-3">
             <a href="https://hotmart.com/pt-br/marketplace/produtos/jornada-dos-7-chakras-vivencia-pratica-com-yoga/D81754728N"
                 target="_blank" class="btn">INSCREVA-SE</a>
         </div>
 
-        <section id="acompanhamento">
+        </section>
 
-            <div>
+        
+
+        <section id="acompanhamento" class="">
+
+            <div id="preRequisito" class="bg-white">
                 <img src="{{ Vite::asset('resources/imagens/hay_meditando400.png') }}" alt="">
-                <br>Pre-requisito para participar
-                <br><strong>QUERER</strong>
+                <br>Pré-requisito para participar:
+                <br><strong>VONTADE</strong>
             </div>
-            <div>
+            <div id="formatoCurso" class="bg-white">
                 <img src="{{ Vite::asset('resources/imagens/curso_online.jpg') }}" alt="">
                 <br>Formato do curso
-                <br><strong>HIBRIDO</strong>
-                <br>AULAS TEORICAS ONLINE E PRATICAS PRESENCIAIS
+                <br><strong>HÍBRIDO</strong>
+                <br>AULAS TEÓRICAS ONLINE E PRÁTICAS PRESENCIAIS
             </div>
-            <div>
+            <div id="diploma" class="bg-white">
                 <img src="{{ Vite::asset('resources/imagens/diploma.png') }}" alt="">
                 <br>CERTIFICAÇÃO COM 100 HORAS AULAS
                 <br>CONTEUDO TEORICO E PRATICOS
@@ -369,16 +367,16 @@
 
         </section>
 
-        <section id="video2">
+        <section id="video2" class="d-flex justify-content-center shadow-lg p-3 m-5">
             <iframe width="560" height="315"
                 src="https://www.youtube.com/embed/Y1HARbJhiR0?si=xOHmNYxuZ2ZnNfQe"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="p-3"></iframe>
         </section>
 
         <section id="formatoDoCurso">
-            <h3>DO FORMATO DO CURSO</h3>
+            <h3 class="display-1">DO FORMATO DO CURSO</h3>
             <p>O formato do curso constitui de encontros semanais, <strong>ONLINE E PRESENCIAIS NAS DATAS
                     ESTIPULADAS.</strong></p>
             <p>
@@ -392,92 +390,43 @@
             </ul>
         </section>
 
-        <section id="avaliacoes">
-            <div>
-                <img src="{{ Vite::asset('resources/imagens/hay_yoga_mao1.png') }}" alt="">
-            </div>
-            <div>
-                Avaliações para quem deseja <strong> LECIONAR</strong>
-                <br>
-                <ul>
-                    <li>Apresentação de aula completa.</li>
-                    <li>Estágio Supervisionado - Obrigatório aos que almejam certificação para
-                        <strong>lecionar</strong> - consiste em ministrar 100 horas aulas, e escrever um relatório
-                        envolvendo no mínimo 12 aulas, descrevendo sobre as experiências vivenciadas.
-                    </li>
-                </ul>
-                Para garantir sua vaga, inscreva-se efetivando o pagamento e preenchendo o questionário e ficha de
-                inscrição.
-                <br>
-                Os cursos livres fazem parte da modalidade de Educação Profissional e tem base legal no Decreto nº
-                5.154/04 e na Portaria Nº 008/02. Não exigem comprovação de escolaridade anterior do ministrante. Os
-                certificados de conclusão são emitidos
+        
 
-                Pelas próprias instituições que oferecem os cursos, mas nada disso quer dizer que os cursos livres
-                dispensam os critérios acadêmicos utilizados nas modalidades da educação superior.
-            </div>
-        </section>
+        <section id="investimento" class="shadow-lg container">
+            <div class="container text-center">
 
-        <section id="praticaPessoal">
+                <h2 class="fs-1 mb-4 p-3 display-1 container">INVESTIMENTO</h2>
 
-            <div>
-                <img src="{{ Vite::asset('resources/imagens/hay.png') }}" alt="">
-            </div>
-            <div>
-                <h3>SUA PRATICA PESSOAL</h3>
-                <p>Deve-se ser regular, para que, de fato, o aluno possa ter aproveitamento do curso.</p>
-                <p>Enfatiza- se a importância da prática individual e diária. Assim, surgem as dúvidas e os insights
-                    que vão tornar o curso mais enriquecedor, interessante e transformador.</p>
-                <p>A prática regular com um professor competente, fora dos encontros da formação, é fundamental para
-                    se
-                    adquirir um leque maior de técnicas, receber correções e vivenciar os respectivos efeitos. Para
-                    isso
-                    sugere-se 02 aulas semanais.</p>
-                <p>TAMBEM É SUGERIDO A TROCA DE AULAS ENTRE OS PARTICIPANTES DO GRUPO.</p>
+                <p class="mb-2">
+                    R$5.000 à vista ou 12x de R$530,00 no cartão de crédito.
+                </p>
+
+                <p class="mb-4">
+                    Mais esclarecimentos e ou informações para pagamento, link ou transferência,
+                    fale conosco clicando no ícone.
+                </p>
+
+                <div class="d-flex flex-column align-items-center gap-2">
+
+                    <a id="whatsapp"
+                        href="https://api.whatsapp.com/send?phone=557196668468&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20curso%20de%20Reiki!"
+                        target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                            alt="WhatsApp" width="80">
+                    </a>
+
+                    <p class="m-3">APENAS MENSAGEM DE TEXTO</p>
+
+                    <h3 class="fs-2">Shanti! 🙏</h3>
+
+                </div>
+
             </div>
         </section>
 
-        <section>
-            <div id="fotosMenores">
-                <img src="{{ Vite::asset('resources/imagens/hay.png') }}" alt="">
-                <img src="{{ Vite::asset('resources/imagens/ju.png') }}" alt="">
-            </div>
-            <div id="fotoJuVermelho">
-                <img src="{{ Vite::asset('resources/imagens/juVermelho.png') }}" alt="">
-            </div>
-        </section>
 
-        <section id="investimento">
-            <h2>INVESTIMENTO</h2>
-            <p>5,000 mil a vista ou
-                <br>12 x de 530 cartão credito
-            </p>
-            <p>Mais esclarecimentos e ou informações para pagamento, link ou transferência, fale
-                conosco clicando no icone <br>
-                &#128073;
-                <a id="whatsapp"
-                    href="https://api.whatsapp.com/send?phone=557196668468&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20curso%20de%20Reiki!"
-                    target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
-                        width="40">
-                </a>
-            <p><strong>APENAS MENSAGEM DE TEXTO</strong>.</p>
 
-            </p>
-            <h3>Shanti! &#128591; </h3>
-
-        </section>
-
-        <section id="informacoes">
-
-        </section>
-
-        <div class="cta-buttons">
-            <a href="https://hotmart.com/pt-br/marketplace/produtos/jornada-dos-7-chakras-vivencia-pratica-com-yoga/D81754728N"
-                target="_blank" class="btn">INSCREVA-SE</a>
-        </div>
-
-        <section class="quem-sou">
+        <!-- <section class="quem-sou">
 
             <div class="content">
                 <img src="{{ Vite::asset('resources/imagens/fotoinstrutora.png') }}" alt="Foto da instrutora">
@@ -521,9 +470,9 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
-        <section id="aulasGratis" class="p-3">
+        <section id="aulasGratis" class="p-3 m-5">
             <h2 class="display-2 d-flex vw-100 mt-5 mb-5 justify-content-center">AULAS GRÁTIS</h2>
             <div class="grid-aulasGratis">
 
@@ -683,28 +632,6 @@
             </div>
 
         </section>
-
-        <h2>MINHAS REDES SOCIAIS</h2>
-        <section class="minhasRedes">
-
-            <div class="redes">
-
-                <a href="https://www.youtube.com/@flowyogadespertar" target="_blank" rel="external">
-                    <img src="{{ Vite::asset('resources/imagens/icons8-logotipo-do-youtube-94.png') }}" alt="Logo Youtube">
-                    <p>Despertar Yoga</p>
-                </a>
-                <a href="https://www.instagram.com/hayyoga/" target="_blank" rel="external">
-                    <img src="{{ Vite::asset('resources/imagens/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
-                    <p>@hayyoga</p>
-                </a>
-
-                <a href="https://www.instagram.com/terapiandoavidacmagia/" target="_blank" rel="external">
-                    <img src="{{ Vite::asset('resources/imagens/icons8-instagram-logo-94.png') }}" alt="Logo Instagram">
-                    <p>@terapiandoavidacommagia</p>
-                </a>
-            </div>
-        </section>
-
 
 
     </main>

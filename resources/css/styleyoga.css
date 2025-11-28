@@ -1,12 +1,6 @@
-@font-face {
-    font-family: "Montserrat";
-    src: url("../typographyFonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-
 * {
-    font-family: "Montserrat";
+    font-family: 'Lato', 'serif';
+
 }
 
 body {
@@ -354,7 +348,7 @@ li {
 
 } */
 #jornadaAutoconhecimento {
-    color: #e6f2f8;
+    color: #cee3ee !important; ;
 }
 
 #cronograma {
@@ -506,29 +500,16 @@ li {
 }
 
 #areaAtuacao {
-    background-color: #ffffff;
+
     padding: 3rem;
-    border-radius: 20px;
     text-align: center;
     align-items: center;
-
-    h3 {
-        margin: 0px;
-    }
-
-    ul {
-        display: inline-block;
-        margin: 20px;
-    }
-
-
-    p {
-        margin: 0px;
-        font-size: 1.5rem;
-    }
-
     text-align: center;
     font-size: 2rem;
+
+    li {
+        background-color: transparent;
+    }
 }
 
 #acompanhamento {
@@ -554,9 +535,57 @@ li {
 
 }
 
-#video2 {
-    margin: 6rem;
+#acompanhamento {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    /* garante que TODAS as divs tenham mesma altura */
+    height: 450px;
+    /* ajuste a altura como desejar */
+    padding: 40px 0;
+    gap: 20px;
 }
+
+#acompanhamento {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    height: 450px;
+    /* altura fixada */
+}
+
+#acompanhamento>div {
+    flex: 1;
+    background: #0dcaf0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centraliza conteúdo verticalmente */
+    align-items: center;
+    /* centraliza horizontalmente */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* IMAGENS CONTROLADAS */
+#acompanhamento>div img {
+    max-width: 70%;
+    max-height: 220px;
+    /* impede que a imagem estoure a div */
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* HOVER */
+#acompanhamento>div:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+
 
 #formatoDoCurso {
     display: flex;
