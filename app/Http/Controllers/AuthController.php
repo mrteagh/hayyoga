@@ -14,7 +14,7 @@ class AuthController extends Controller
 
     public function formLogin()
     {
-        return view('index')->with('showLoginModal', true);;
+        return view('index')->with('showLoginModal', true);
     }
 
     public function login(Request $request)
@@ -22,20 +22,18 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (!Auth::attempt($credentials)) {
-            return view('index')
-                ->with([
-                    'loginError' => 'Credenciais inválidas'
-                ])
-                ->with('loginModal', true); // flag para abrir o modal   
+            return redirect()->back()
+                ->withErrors(['email' => 'Credenciais inválidas'])
+                ->with('showLoginModal', true);
         }
 
-        return view('yoga')->with(['message' => 'Login bem-sucedido']);
+        return redirect('/yoga');
     }
 
     public function logout()
     {
         Auth::logout();
-        return view('index');
+        return redirect('/');
     }
 
 
@@ -45,7 +43,7 @@ class AuthController extends Controller
 
     public function formCadastro()
     {
-        return view('cadastro');
+        return view('auth.register'); // CORREÇÃO AQUI
     }
 
     public function register(Request $request)
@@ -53,7 +51,7 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6'
+            'password' => 'required|min:6|confirmed'
         ]);
 
         $user = User::create([
@@ -62,6 +60,11 @@ class AuthController extends Controller
             'password' => bcrypt($request->password)
         ]);
 
-        return view('cadastro')->with(['Cadastrado com sucesso'], 201);
+        // Login automático após cadastrar
+        Auth::login($user);
+
+        // Redirecionar para a página inicial (ou outra)
+        return redirect('/yoga')->with('success', 'Cadastro realizado com sucesso!');
     }
 }
+
