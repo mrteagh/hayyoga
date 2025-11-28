@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -51,7 +49,6 @@ h1, h3, h4, h5, h6 {
     letter-spacing: 0.5px;
 }
 
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
 .fotoHeader .juVermelho {
     align-items: center;
     display: flex;
@@ -64,28 +61,6 @@ h1, h3, h4, h5, h6 {
 }
 
 .hero {
-<<<<<<< HEAD
-    background: url('img/hero.jpg') no-repeat center center/cover;
-    /* height: 50vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-.hero .overlay {
-    background-color: rgba(255, 255, 255, 0);
-    padding: 40px;
-    border-radius: 10px;
-    width: 90vw;
-
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-=======
    background: none;
     display: flex;
     align-items: center;
@@ -112,7 +87,6 @@ h1, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.3;
     margin: 0;
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
 }
 
 .hero p {
@@ -139,27 +113,6 @@ h1, h3, h4, h5, h6 {
 }
 
 #cursos {
-<<<<<<< HEAD
-    border: #000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-
-    .caixa {
-        text-align: center;
-
-        img {
-            border-radius: 20px;
-        }
-
-        img:hover {
-            border-style: solid;
-            color: #ff660092;
-            border-width: 5px;
-=======
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +133,6 @@ h1, h3, h4, h5, h6 {
         img:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 18px rgba(0,0,0,0.15);
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
         }
 
 
@@ -191,37 +143,19 @@ h1, h3, h4, h5, h6 {
 
 
 .quem-sou {
-<<<<<<< HEAD
-    padding: 1rem;
-=======
     padding: 3rem 1rem;
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
 
 }
 
 .quem-sou h2 {
     text-align: center;
-<<<<<<< HEAD
-    margin-bottom: 20px;
-=======
     margin-bottom: 2.5rem;
     font-size: 2.2rem;
     letter-spacing: 1px;
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
 }
 
 .quem-sou .content {
     display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    background-color: white;
-    padding: 1rem;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px rgba(253, 143, 0, 0.16);
-=======
     align-items: flex-start;
     gap: 40px;
     max-width: 1200px;
@@ -231,7 +165,6 @@ h1, h3, h4, h5, h6 {
     background: #ffffff;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(200, 180, 140, 0.25);
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
 
     .textoQuemSou {
         display: flex;
@@ -241,14 +174,11 @@ h1, h3, h4, h5, h6 {
         max-width: 1000px;
         margin: 0 auto;
         border-radius: 0px;
-<<<<<<< HEAD
-=======
         margin: 8px 0;
         text-align: justify;
         text-indent: 2em;
         line-height: 1.4;
         color: #333; 
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
 
         display: block;
         /* Garante comportamento de bloco */
@@ -265,10 +195,6 @@ h1, h3, h4, h5, h6 {
         }
 
         P {
-<<<<<<< HEAD
-            margin: 0PX;
-        }
-=======
            text-align: justify;
             line-height: 1.5;
             font-size: 1.05rem;
@@ -276,15 +202,10 @@ h1, h3, h4, h5, h6 {
             text-indent: 2em;
         }
         
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
     }
 }
 
 .quem-sou img {
-<<<<<<< HEAD
-    width: 300px;
-    border-radius: 10px;
-=======
     width: 70%;
         max-width: 320px;
         margin: 0 auto;
@@ -292,7 +213,6 @@ h1, h3, h4, h5, h6 {
 
 .quem-sou img:hover {
     transform: scale(1.03);
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
 }
 
 h2 {

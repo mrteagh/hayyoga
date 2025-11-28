@@ -255,7 +255,7 @@
         </div>
 
         <script>
-            const modal = document.getElementById("loginModal");
+           
             const btn = document.getElementById("loginBtn");
             const span = document.getElementsByClassName("close")[0];
 

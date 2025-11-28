@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-import './bootstrap';
-=======
-document.addEventListener("DOMContentLoaded", () => {
+gitdocument.addEventListener("DOMContentLoaded", () => {
 
     const modal = document.getElementById("loginModal");
 
@@ -32,4 +29,3 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "block";
     }
 });
->>>>>>> eab2ac936aaf74bb979374edf2363efc9a74d23f
