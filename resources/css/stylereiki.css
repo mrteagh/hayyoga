@@ -2196,56 +2196,7 @@ h3 {
     color: #484312;
 }
 
-.minhasRedes {
-    border: #000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 60PX;
 
-
-}
-
-.redes {
-    border: #000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 5rem;
-
-    a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-    }
-
-    p {
-        text-decoration: none;
-        color: #000;
-    }
-
-}
-
-
-
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-footer .social-icons a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-}
 
 .modal {
     display: none;

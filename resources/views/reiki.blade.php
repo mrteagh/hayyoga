@@ -117,7 +117,8 @@
                     <div class="cards">
 
                         <div class="card1">
-                            <img src="Imagem/passe.jpg" alt="Descrição da imagem">
+                            
+                            <img src="{{ Vite::asset('resources/imagens/passe.jpg') }}" alt="Descrição da imagem">
                             <div class="card1-content">
                                 <h2>Beneficios do Reiki</h2>
 
@@ -241,7 +242,8 @@
                         </div>
 
                         <div class="card2">
-                            <img src="Imagem/impsicaodemaos.jpg" alt="Descrição da imagem">
+                            
+                            <img src="{{ Vite::asset('resources/imagens/impsicaodemaos.jpg') }}" alt="Descrição da imagem">
                             <div class="card2-content">
                                 <h2>Como se tornar</h2>
 
@@ -290,7 +292,8 @@
                     <div class="cards2">
 
                         <div class="card3">
-                            <img src="Imagem/reiki7.jpeg" alt="Descrição da imagem">
+                            
+                            <img src="{{ Vite::asset('resources/imagens/reiki7.jpeg') }}" alt="Descrição da imagem">
                             <div class="card3-content">
                                 <h2>Quem pode participar</h2>
 
@@ -318,7 +321,7 @@
                         </div>
 
                         <div class="card4">
-                            <img src="Imagem/reiki4.jpg" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/reiki4.jpg') }}">
                             <div class="card4-content">
                                 <h2>Formatos do curso</h2>
 
@@ -367,7 +370,8 @@
                     <div class="cards3">
 
                         <div class="card5">
-                            <img src="Imagem/bambu.jpg" alt="Descrição da imagem">
+                            
+                            <img src="{{ Vite::asset('resources/imagens/bambu.jpg') }}" alt="Descrição da imagem">
                             <div class="card5-content">
                                 <h2>Nivel I <br>
                                     <strong>SHODEN</strong> - O despertar
@@ -786,7 +790,7 @@
 
 
 
-                <section class="quem-sou">
+                <!-- <section class="quem-sou">
                     <h2>QUEM SOU</h2>
                     <div class="content">
                         <img src="{{ Vite::asset('resources/imagens/fotoinstrutora.png') }}">
@@ -822,7 +826,7 @@
                             mas nunca perdia o costume de ficar com meu silencio interior.
                         </p>
                     </div>
-                </section>
+                </section> -->
                 <section class="testemunha">
 
                     <h3>DEPOIMENTOS</h3>
