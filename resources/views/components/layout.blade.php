@@ -42,7 +42,7 @@
                 <a href="/">Home</a>
                 <a href="/yoga">Yoga</a>
                 <a href="/reiki">Reiki</a>
-                <a href="/register">Cadastrar-se</a>
+                <a href="/cadastro">Cadastrar-se</a>
 
                 @auth
                 <form action="{{ route('logout') }}" method="POST" style="display:inline;">
@@ -56,16 +56,11 @@
         </div>
     </header>
 
-<<<<<<< HEAD
-    <!-- Modal Login -->
-    <div id="loginModal" class="modal">
-=======
     <!-- Modal de Login -->
     <div id="loginModal" class="modal"
         data-open="{{ $showLoginModal ? 'true' : 'false' }}"
         style="display:none;">
 
->>>>>>> a36fcf7a6a867cec40647fa49e16ea77c5a0174b
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Login</h2>
@@ -89,40 +84,9 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-    <!-- Script Modal -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var modal = document.getElementById("loginModal");
-            var loginBtn = document.getElementById("loginBtn");
-            var closeBtn = modal.querySelector(".close");
-
-            if (loginBtn) {
-                loginBtn.onclick = function() {
-                    modal.style.display = "block";
-                }
-            }
-
-            closeBtn.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-
-            @if(isset($showLoginModal) && $showLoginModal)
-            modal.style.display = "block";
-            @endif
-        });
-    </script>
-=======
 
 
 
->>>>>>> a36fcf7a6a867cec40647fa49e16ea77c5a0174b
 
     <!-- Conteúdo das páginas -->
     {{ $slot }}
