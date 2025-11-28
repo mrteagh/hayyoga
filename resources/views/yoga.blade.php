@@ -491,6 +491,8 @@
                 </div>
             </section>
 
+            @auth
+
             <section class="aulasGratis">
                 <h2 class="">AULAS GRÁTIS</h2>
                 <div class="grid-aulasGratis">
@@ -539,6 +541,7 @@
                     </div>
                 </div>
             </section>
+            @endauth
 
             <section class="cortesLivesVideos">
 

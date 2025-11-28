@@ -1,5 +1,6 @@
 <x-layout>
     @vite(['resources/css/styleMain.css'])
+
     <body>
 
         <section class="fotoHeader">
@@ -13,7 +14,7 @@
                     <h1>Transforme sua vida com Yoga e Reiki!
                         <br>Aprenda a se reconectar com sua energia vital!
                     </h1>
-                 
+
                 </div>
             </section>
             <section id="cursos">
@@ -76,9 +77,9 @@
                     </div>
                 </div>
             </section>
-            
 
-            
+
+
             <!--
         <section class="testemunha">
             <div class="testimonial">
@@ -96,21 +97,6 @@
         </section>-->
 
         </main>
-
-
-
-
-
-        <!-- Modal de Login -->
-        <div id="loginModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Login</h2>
-                <input type="text" placeholder="Usuário" />
-                <input type="password" placeholder="Senha" />
-                <button class="btn">Entrar</button>
-            </div>
-        </div>
 
         <script>
             const modal = document.getElementById("loginModal");

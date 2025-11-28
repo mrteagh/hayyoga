@@ -1,30 +1,37 @@
-   <x-layout>
-    
-   <div class="container">
-            <h1>Cadastro de Usuário</h1>
+<x-layout>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
 
-            @if(session('sucesso'))
+        @if(session('sucesso'))
             <p style="color: green;">{{ session('sucesso') }}</p>
-            @endif
+        @endif
 
-            <form action="{{ route('cadastro.salvar') }}" method="POST">
-                @csrf
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="name" required>
+        @if ($errors->any())
+            <div style="color: red;">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
-               <label for="email">E-mail:</label>
-               <input type="email" id="email" name="email" required>
+        <form action="{{ route('cadastro.register') }}" method="POST">
+            @csrf
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="password" required>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="name" required>
 
-                <label for="confirmar-senha">Confirmar Senha:</label>
-                <input type="password" id="confirmar-senha" name="password-senha" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-               <button type="submit">Cadastrar</button>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="password" required>
 
-                <a href="/">Sair</a>
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input type="password" name="password_confirmation" required>
 
-            </form>
-        </div>
-        </x-layout>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</x-layout>
