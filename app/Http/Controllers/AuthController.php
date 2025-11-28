@@ -22,11 +22,11 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (!Auth::attempt($credentials)) {
-            return view('index')
-                ->with([
+            return back()
+                ->withErrors([
                     'loginError' => 'Credenciais inválidas'
                 ])
-                ->with('loginModal', true); // flag para abrir o modal   
+                ->with('showLoginModal', true); // flag para abrir o modal   
         }
 
         return view('yoga')->with(['message' => 'Login bem-sucedido']);

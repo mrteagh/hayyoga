@@ -18,23 +18,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
 <body>
+    @props(['showLoginModal' => false])
 
     <header>
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img src="{{ Vite::asset('resources/imagens/logoheader.jpeg') }}" alt="logo HayYoga">
+                    <img src="{{ asset('logoheader.jpeg') }}" alt="logo HayYoga">
                 </a>
             </div>
+
             <div class="brand">HayYoga</div>
+
             <nav>
                 <a href="/">Home</a>
                 <a href="/yoga">Yoga</a>
                 <a href="/reiki">Reiki</a>
-                <a href="/cadastro">Cadastrar-se</a>
+                <a href="/register">Cadastrar-se</a>
 
                 @auth
-                <!-- Logout usando form, pois button não suporta href -->
                 <form action="{{ route('logout') }}" method="POST" style="display:inline;">
                     @csrf
                     <button type="submit">Logout</button>
@@ -47,12 +49,14 @@
     </header>
 
     <!-- Modal de Login -->
-    <div id="loginModal" class="modal">
+    <div id="loginModal" class="modal"
+        data-open="{{ $showLoginModal ? 'true' : 'false' }}"
+        style="display:none;">
+
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Login</h2>
 
-            <!-- Mostrar erros -->
             @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -72,38 +76,9 @@
         </div>
     </div>
 
-    <!-- Script para abrir modal -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var modal = document.getElementById("loginModal");
-            var loginBtn = document.getElementById("loginBtn");
-            var closeBtn = modal.querySelector(".close");
 
-            // Abrir modal ao clicar no botão Login
-            if (loginBtn) {
-                loginBtn.onclick = function() {
-                    modal.style.display = "block";
-                }
-            }
 
-            // Fechar modal ao clicar no X
-            closeBtn.onclick = function() {
-                modal.style.display = "none";
-            }
 
-            // Fechar modal ao clicar fora da área
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-
-            // Abrir modal automaticamente se houver falha no login
-            @if(isset($showLoginModal) && $showLoginModal)
-            modal.style.display = "block";
-            @endif
-        });
-    </script>
 
 
     {{ $slot }}
