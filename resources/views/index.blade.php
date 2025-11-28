@@ -1,7 +1,7 @@
 <x-layout>
-    <main>
-        @foreach ($aulas as $aula)
-            <x-card-aula :title="$aula['title']" :text="$aula['title']"/>
-        @endforeach
-    </main>
+    
+     <img src="{{ Vite::asset('resources/imagens/yoga(10).jpg') }}" alt="Yoga">
+
+   
+     
 </x-layout>
