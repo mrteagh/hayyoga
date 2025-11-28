@@ -22,9 +22,17 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (!Auth::attempt($credentials)) {
+<<<<<<< HEAD
             return redirect()->back()
                 ->withErrors(['email' => 'Credenciais inválidas'])
                 ->with('showLoginModal', true);
+=======
+            return back()
+                ->withErrors([
+                    'loginError' => 'Credenciais inválidas'
+                ])
+                ->with('showLoginModal', true); // flag para abrir o modal   
+>>>>>>> a36fcf7a6a867cec40647fa49e16ea77c5a0174b
         }
 
         return redirect('/yoga');

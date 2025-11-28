@@ -1,4 +1,5 @@
-<x-layout>
+<x-layout :showLoginModal="$showLoginModal ?? ($errors->any() ? true : false)">
+
     @vite(['resources/css/styleMain.css'])
 
     <body>
@@ -9,7 +10,7 @@
             </div>
         </section>
         <main>
-<<<<<<< HEAD
+
             <section class="hero">
                 <div class="overlay">
                     <h1>Transforme sua vida com Yoga e Reiki!
@@ -29,7 +30,7 @@
                         <img src="{{Vite::asset('resources/imagens/hay_reiki_mao1.png')}}" alt="Seu navegador nao carrega esta imagem">
                     </div>
                 </a>
-=======
+
 <section class="hero">
     <div class="overlay">
         <h1>
@@ -52,7 +53,6 @@
         </a>
     </div>
 </section>
->>>>>>> f4705a7e98ae107efde28dfb064b917209dbfd82
 
             </section>
 
@@ -178,4 +178,5 @@
             }
         </script>
     </body>
+>>>>>>> a00fa5f933b67c84406501eb89a062f820916b5c
 </x-layout>

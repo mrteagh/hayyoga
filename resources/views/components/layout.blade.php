@@ -26,12 +26,13 @@
 </head>
 
 <body>
+    @props(['showLoginModal' => false])
 
     <header>
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img src="{{ Vite::asset('resources/imagens/logoheader.jpeg') }}" alt="logo HayYoga">
+                    <img src="{{ asset('logoheader.jpeg') }}" alt="logo HayYoga">
                 </a>
             </div>
 
@@ -55,8 +56,16 @@
         </div>
     </header>
 
+<<<<<<< HEAD
     <!-- Modal Login -->
     <div id="loginModal" class="modal">
+=======
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal"
+        data-open="{{ $showLoginModal ? 'true' : 'false' }}"
+        style="display:none;">
+
+>>>>>>> a36fcf7a6a867cec40647fa49e16ea77c5a0174b
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Login</h2>
@@ -80,6 +89,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Script Modal -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -108,6 +118,11 @@
             @endif
         });
     </script>
+=======
+
+
+
+>>>>>>> a36fcf7a6a867cec40647fa49e16ea77c5a0174b
 
     <!-- Conteúdo das páginas -->
     {{ $slot }}
