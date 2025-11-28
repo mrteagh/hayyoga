@@ -1,25 +1,29 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\CadastroController;
+use App\Http\Controllers\AuthController;
 
-Route::get('/', function () {
-    $aulas = [
-        [
-            'title' => 'Quem pode participar',
-            'text' => 'Uma introdução suave ao yoga, perfeita para quem está começando.',
-        ],
-        [
-            'title' => 'Yoga Avançado',
-            'text' => 'Desafie seu corpo e mente com posturas avançadas e técnicas de respiração.',
-        ],
-        [
-            'title' => 'Meditação e Relaxamento',
-            'text' => 'Aprenda técnicas de meditação para reduzir o estresse e aumentar o foco.',
-        ],
-        [
-            'title' => 'Teste 12',
-            'text' => 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        ],
-    ];
-    return view('index', ['aulas'=> $aulas]);
-});
+// ================================
+// Rotas públicas das páginas
+// ================================
+Route::get('/', [MainController::class, 'home'])->name('home');
+Route::get('/yoga', [MainController::class, 'yoga'])->name('yoga');
+Route::get('/reiki', [MainController::class, 'reiki'])->name('reiki');
+
+
+// ================================
+// Rotas de autenticação (login/logout/register)
+// ================================
+Route::get('/login', [AuthController::class, 'formLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.enviar');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
+// ================================
+// Rotas de cadastro
+// ================================
+Route::get('/register', [AuthController::class, 'formCadastro'])->name('cadastro');
+Route::post('/register', [AuthController::class, 'register'])->name('cadastro.register');
+
