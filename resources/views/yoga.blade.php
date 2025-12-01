@@ -5,7 +5,7 @@
 
         <section class="hero m-0 p-0">
             <div class="oYoga fs-3 p-5">
-                <h1 class="fw-bold display-1 vw-100 display-1 p-3">O YOGA</h1>
+                <h1 class="tituloYoga">O YOGA</h1>
                 <p class="fs-3 m-4 p-3">
                     O Yoga é um poderoso instrumento de crescimento e transformação pessoal que através do autoconhecimento
                     e compreensão do ser humano e da vida, propõe um estilo de vida consciente, nos direcionando a um estado
@@ -188,7 +188,7 @@
             <section class="d-flex flex-column justify-content-center my-5 text-center">
 
                 <h2 class="fw-bold display-4 container mb-3 text-dark d-flex justify-content-center">Certificação</h2>
-                <div class="mx-auto mb-4" style="height:4px; width:80px; background:#8e44ad; border-radius:4px;"></div>
+                <div class="mx-auto mb-4 bg-black" style="height:4px; width:80px; background:#8e44ad; border-radius:4px;"></div>
 
                 <div class="card shadow-sm border-0 p-4" style="border-radius:18px;">
 
@@ -227,7 +227,7 @@
             <style>
                 /* Cor personalizada dos botões e cabeçalho dos modais */
                 :root {
-                    --cor-principal: #f86300ff;
+                    --cor-principal: #000000ff;
                     /* Você pode trocar esta cor */
                 }
 
@@ -238,7 +238,7 @@
                 }
 
                 .btn-custom:hover {
-                    background-color: #692f86;
+                    background-color: #95b6c8;
                     color: #fff;
                 }
 
@@ -277,7 +277,7 @@
                 <div class="row g-4">
 
                     <!-- CARD 1 -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-3">
                         <div class="card shadow-sm h-100 text-center">
                             <img src="{{ Vite::asset('resources/imagens/ju.png') }}" class="card-img-top" alt="">
                             <div class="card-body">
@@ -288,7 +288,7 @@
                     </div>
 
                     <!-- CARD 2 – Práticas do Tantra -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-3">
                         <div class="card shadow-sm h-100 text-center">
                             <img src="{{ Vite::asset('resources/imagens/1446.jpg') }}" class="card-img-top" alt="">
                             <div class="card-body">
@@ -299,7 +299,7 @@
                     </div>
 
                     <!-- CARD 4 (movido para baixo do Card 2) -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-3">
                         <div class="card shadow-sm h-100 text-center">
                             <img src="{{ Vite::asset('resources/imagens/1446.jpg') }}" class="card-img-top" alt="">
                             <div class="card-body">
@@ -310,7 +310,7 @@
                     </div>
 
                     <!-- CARD 3 (agora fica por último) -->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-3">
                         <div class="card shadow-sm h-100 text-center">
                             <img src="{{ Vite::asset('resources/imagens/ju.png') }}" class="card-img-top" alt="">
                             <div class="card-body">
@@ -326,7 +326,7 @@
 
         <section id="areaAtuacao" class="shadow-lg vw-100">
 
-            <h1 class="p-3 text-black">AREAS DE ATUAÇÃO</h1>
+            <h1 class="p-3 text-black">ÁREAS DE ATUAÇÃO</h1>
             <UL class="list-group list-group-flush list-group-numbered vw-100">
                 <LI class="list-group-item">Auto conhecimento</LI>
                 <LI class="list-group-item">Grupos e rodas</LI>
@@ -376,13 +376,13 @@
         </section>
 
         <section id="formatoDoCurso">
-            <h3 class="display-1">DO FORMATO DO CURSO</h3>
-            <p>O formato do curso constitui de encontros semanais, <strong>ONLINE E PRESENCIAIS NAS DATAS
+            <h3 class="display-1">O FORMATO DO CURSO</h3>
+            <p>O formato do curso constitui-se em encontros semanais, <strong>ONLINE E PRESENCIAIS NAS DATAS
                     ESTIPULADAS.</strong></p>
             <p>
-                Um ano, totalizando uma carga horária de 100+ ESTAGIO 100 horas/aula para quem pretende dar aula.
+                Um ano, totalizando uma carga horária de 100+ ESTÁGIO 100 horas/aula para quem pretende dar aula.
             </p>
-            <p id="bonus"> <strong>+ BONUS</strong> </p>
+            <p id="bonus"> <strong>+ BÔNUS</strong> </p>
             <ul>
                 <li>YOGA DOS 7 CHAKRAS (7 AULAS PRATICAS)</li>
                 <li>YOGA DOS 4 ELEMENTOS 4 AULAS PRATICAS </li>
@@ -471,9 +471,9 @@
 
             </div>
         </section> -->
-
+        @auth
         <section id="aulasGratis" class="p-3 m-5">
-            <h2 class="display-2 d-flex vw-100 mt-5 mb-5 justify-content-center">AULAS GRÁTIS</h2>
+            <h2 class="display-2 text-center my-5">AULAS GRÁTIS (Conteúdo exclusivo)</h2>
             <div class="grid-aulasGratis">
 
                 <div class="item"><iframe width="560" height="315"
@@ -520,10 +520,10 @@
                 </div>
             </div>
         </section>
-
+        @endauth
         <section id="cortesLivesVideos" class="p-3">
 
-            <h2 class="display-2 d-flex vw-100 mt-5 mb-5 justify-content-center">CORTES, LIVES E VÍDEOS GRATIS</h2>
+            <h2 class="display-2 d-flex justify-content-center my-5">CORTES, LIVES E VÍDEOS GRATIS</h2>
 
             <div class="grid-cortes">
 

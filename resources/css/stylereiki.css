@@ -8,7 +8,12 @@ body {
 
 }
 
-header {
+* {
+    font-family: 'Lato', 'serif';
+
+}
+
+/* header {
     position: sticky;
     top: 0;
     background-color: #000000;
@@ -52,7 +57,7 @@ nav button {
 nav button:hover {
     background-color: #FFFB00;
     color: #000;
-}
+} */
 
 .fotoHeader .yogadespertar {
     align-items: center;

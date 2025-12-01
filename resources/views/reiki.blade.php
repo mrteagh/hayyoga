@@ -3,6 +3,7 @@
     @vite(['resources/css/stylereiki.css'])
     
     <body>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
         <section class="fotoHeader">
             <div class="yogadespertar">
