@@ -8,29 +8,6 @@ body {
 
 }
 
-header {
-    position: sticky;
-    top: 0;
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    z-index: 1000;
-
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .brand {
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: center;
-    padding-left: 25rem;
-}
-
 nav a,
 nav button {
     margin-left: 10px;

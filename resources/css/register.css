@@ -27,7 +27,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     margin-bottom: 25px;
-    color: #6B2A82;
+    color: #f68700;
 }
 
 .register-container input {
@@ -41,14 +41,14 @@
 }
 
 .register-container input:focus {
-    border-color: #8b39a6;
-    box-shadow: 0 0 5px rgba(139, 57, 166, 0.4);
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(56, 55, 56, 0.4);
 }
 
 .register-container button {
     width: 100%;
     padding: 12px;
-    background: #A14FBF;
+    background: #f68700;
     border: none;
     border-radius: 12px;
     color: white;
@@ -59,7 +59,7 @@
 }
 
 .register-container button:hover {
-    background: #8b39a6;
+    background: #000000;
     transform: translateY(-2px);
 }
 
@@ -69,7 +69,7 @@
 }
 
 .register-container .login-link a {
-    color: #A14FBF;
+    color: #f68700;
     text-decoration: none;
     font-weight: bold;
 }
