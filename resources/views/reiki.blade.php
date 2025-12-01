@@ -119,7 +119,7 @@
 
                         <div class="card1">
 
-                            <img src="{{ Vite::asset('resources/imagens/passe.jpg') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (1).jpg') }}" alt="Descrição da imagem">
                             <div class="card1-content">
                                 <h2>Beneficios do Reiki</h2>
 
@@ -244,7 +244,7 @@
 
                         <div class="card2">
 
-                            <img src="{{ Vite::asset('resources/imagens/impsicaodemaos.jpg') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (2).jpg') }}" alt="Descrição da imagem">
                             <div class="card2-content">
                                 <h2>Como se tornar</h2>
 
@@ -294,7 +294,7 @@
 
                         <div class="card3">
 
-                            <img src="{{ Vite::asset('resources/imagens/reiki7.jpeg') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (3).jpg') }}" alt="Descrição da imagem">
                             <div class="card3-content">
                                 <h2>Quem pode participar</h2>
 
@@ -322,7 +322,7 @@
                         </div>
 
                         <div class="card4">
-                            <img src="{{ Vite::asset('resources/imagens/reiki4.jpg') }}">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (4).jpg') }}">
                             <div class="card4-content">
                                 <h2>Formatos do curso</h2>
 
@@ -372,7 +372,7 @@
 
                         <div class="card5">
 
-                            <img src="{{ Vite::asset('resources/imagens/bambu.jpg') }}" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (5).jpg') }}" alt="Descrição da imagem">
                             <div class="card5-content">
                                 <h2>Nivel I <br>
                                     <strong>SHODEN</strong> - O despertar
@@ -428,7 +428,8 @@
                         </div>
 
                         <div class="card6">
-                            <img src="Imagem/reiki.jpg" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (6).jpg') }}" alt="Descrição da imagem">
+                            
                             <div class="card6-content">
                                 <h2>Nivel II <br>
                                     <strong>OKUDEN</strong>
@@ -469,7 +470,8 @@
                         </div>
 
                         <div class="card7">
-                            <img src="Imagem/reiki2.jpg" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (7).jpg') }}" alt="Descrição da imagem">
+                            
                             <div class="card7-content">
                                 <h2>Nivel 3A <br>
                                     <strong>SHODEN</strong> - O despertar
@@ -519,7 +521,8 @@
                         </div>
 
                         <div class="card8">
-                            <img src="Imagem/reiki3.jpg" alt="Descrição da imagem">
+                            <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (8).jpg') }}" alt="Descrição da imagem">
+                            
                             <div class="card8-content">
                                 <h2>Nivel 3B <br>
                                     <strong>OKUDEN</strong>
@@ -604,7 +607,8 @@
                         <div class="cards4">
 
                             <div class="card9">
-                                <img src="Imagem/reiki3.jpg" alt="Descrição da imagem">
+                                <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (5).jpg') }}" alt="Descrição da imagem">
+                            
                                 <div class="card9-content">
                                     <h2>Nivel I</h2>
 
@@ -641,7 +645,8 @@
                             </div>
 
                             <div class="card10">
-                                <img src="Imagem/reiki3.jpg" alt="Descrição da imagem">
+                                <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (4).jpg') }}" alt="Descrição da imagem">
+                            
                                 <div class="card10-content">
                                     <h2>Nivel II </h2>
 
@@ -676,7 +681,8 @@
                             </div>
 
                             <div class="card11">
-                                <img src="Imagem/reiki3.jpg" alt="Descrição da imagem">
+                                <img src="{{ Vite::asset('resources/imagens/fotos_reike/imagem (1).jpg') }}" alt="Descrição da imagem">
+                            
                                 <div class="card11-content">
                                     <h2>Nivel 3 </h2>
 
