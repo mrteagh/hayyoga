@@ -4,57 +4,37 @@
 
     <body>
 
-        <!-- <section class="fotoHeader">
+        <section class="fotoHeader">
             <div class="juVermelho">
                 <img src="{{Vite::asset('resources/imagens/juVermelho.png')}}" alt="Imagem de uma Yogui praticando assanas">
             </div>
         </section>
         <main>
 
+
             <section class="hero">
                 <div class="overlay">
-                    <h1>Transforme sua vida com Yoga e Reiki!
-                        <br>Aprenda a se reconectar com sua energia vital!
+                    <h1>
+                        Transforme sua vida com Yoga e Reiki! <br>
+                        Aprenda a se reconectar com sua energia vital!
                     </h1>
-
                 </div>
             </section>
+
             <section id="cursos">
                 <div class="caixa">
                     <a href="/yoga">
-                        <img src="{{Vite::asset('resources/imagens/hay_yoga_mao1.png')}}" alt="Seu navegador nao carrega esta imagem">
+                        <img src="{{Vite::asset('resources/imagens/hay_yoga_mao1.png')}}" alt="Curso de Yoga">
                     </a>
                 </div>
-                <a href="/reiki">
-                    <div class="caixa">
-                        <img src="{{Vite::asset('resources/imagens/hay_reiki_mao1.png')}}" alt="Seu navegador nao carrega esta imagem">
-                    </div>
-                </a> -->
 
-                <section class="hero">
-                    <div class="overlay">
-                        <h1>
-                            Transforme sua vida com Yoga e Reiki! <br>
-                            Aprenda a se reconectar com sua energia vital!
-                        </h1>
-                    </div>
-                </section>
-
-                <section id="cursos">
-                    <div class="caixa">
-                        <a href="/yoga">
-                            <img src="{{Vite::asset('resources/imagens/hay_yoga_mao1.png')}}" alt="Curso de Yoga">
-                        </a>
-                    </div>
-
-                    <div class="caixa">
-                        <a href="/reiki">
-                            <img src="{{Vite::asset('resources/imagens/hay_reiki_mao1.png')}}" alt="Curso de Reiki">
-                        </a>
-                    </div>
-                </section>
-
+                <div class="caixa">
+                    <a href="/reiki">
+                        <img src="{{Vite::asset('resources/imagens/hay_reiki_mao1.png')}}" alt="Curso de Reiki">
+                    </a>
+                </div>
             </section>
+
 
             <section class="quem-sou">
                 <div class="content">

@@ -7,8 +7,7 @@
 
 /* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-     background-image: linear-gradient(to bottom, #f6870090, #fffb007b);
+    background-image: linear-gradient(to bottom, #f6870090, #fffb007b);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,9 +59,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-    
+
 }
 
 button:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 }

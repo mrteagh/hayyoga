@@ -2,6 +2,12 @@
     @vite(['resources/css/styleyoga.css'])
     <main class="m-0 p-0 ">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+        
+        <section class="fotoHeader">
+            <div class="juVermelho">
+                <img src="{{Vite::asset('resources/imagens/yogadespertar.jpeg')}}" alt="Imagem de uma Yogui praticando assanas">
+            </div>
+        </section>
 
         <section class="hero m-0 p-0">
             <div class="oYoga fs-3 p-5">

@@ -2,9 +2,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Lato !important;
     background-color: #d9d9d97b;
     color: #000000;
+
+}
+
+
+ header {
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    z-index: 1000;
 
 }
 
@@ -12,38 +23,16 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
+    max-width: 100%;
 }
-
-    header {
-        position: sticky !important;
-        top: 0;
-        background-color: #000000;
-        color: #FFFFFF;
-        padding: 10px 20px;
-        z-index: 1000;
-
-    }
-
-    header .container {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        width: 100vw;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        /* adiciona essa linha */
-    }
 
 header .brand {
     font-weight: bold;
     font-size: 3rem;
-    padding-left: 10px;
-    white-space: nowrap;
+    text-align: center;
 }
+
 
 nav {
     display: flex;
@@ -65,11 +54,11 @@ nav button {
     border: none;
 }
 
-    nav button:hover {
-        background-color: #ffffff;
-        color: #000;
-        
-    }
+nav button:hover {
+    background-color: #FFFB00;
+    color: #000;
+}
+
 
 
 .minhasRedes {
@@ -81,5 +70,70 @@ nav button {
     p {
         color: white;
         text-decoration: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
     }
+
+    nav button {
+        background-color: #F68700;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    nav button:hover {
+        background-color: #ffffff;
+        color: #000;
+
+    }
+
+
+    .minhasRedes {
+        margin: 0px;
+    }
+
+    .redes {
+
+        p {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.modal-content .btn {
+    width: 100%;
 }

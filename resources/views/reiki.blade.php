@@ -3,7 +3,7 @@
     @vite(['resources/css/stylereiki.css'])
 
     <body>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
         <section class="fotoHeader">
             <div class="yogadespertar">
@@ -750,18 +750,16 @@
                 </section>
 
                 <section id="fotos">
-                    <div>
-                        <img src="{{ Vite::asset('resources/imagens/reiki1.jpeg') }}">
-                        <img src="{{ Vite::asset('resources/imagens/reiki2.jpeg') }}">
-                    </div>
-                    <div>
-                        <img src="{{ Vite::asset('resources/imagens/reiki3.jpeg') }}">
-                        <img src="{{ Vite::asset('resources/imagens/reiki4.jpeg') }}">
-                    </div>
-                    <div>
-                        <img src="{{ Vite::asset('resources/imagens/reiki5.jpeg') }}">
-                        <img src="{{ Vite::asset('resources/imagens/reiki6.jpeg') }}">
-                    </div>
+
+                    <img src="{{ Vite::asset('resources/imagens/reiki1.jpeg') }}">
+                    <img src="{{ Vite::asset('resources/imagens/reiki2.jpeg') }}">
+
+                    <img src="{{ Vite::asset('resources/imagens/reiki3.jpeg') }}">
+                    <img src="{{ Vite::asset('resources/imagens/reiki4.jpeg') }}">
+
+                    <img src="{{ Vite::asset('resources/imagens/reiki5.jpeg') }}">
+                    <img src="{{ Vite::asset('resources/imagens/reiki6.jpeg') }}">
+
                 </section>
 
                 <section id="investimento">
