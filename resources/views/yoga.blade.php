@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout :showLoginModal="$showLoginModal ?? ($errors->any() ? true : false)">
     @vite(['resources/css/styleyoga.css'])
     <main class="m-0 p-0 ">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
@@ -337,14 +337,14 @@
                 <li class="list-group-item">Questionários, exercícios práticos e teóricos (opcional)</li>
             </UL>
 
-           <div class="cta-buttons mt-5 m-3">
-            <a href="https://hotmart.com/pt-br/marketplace/produtos/jornada-dos-7-chakras-vivencia-pratica-com-yoga/D81754728N"
-                target="_blank" class="btn">INSCREVA-SE</a>
-        </div>
+            <div class="cta-buttons mt-5 m-3">
+                <a href="https://hotmart.com/pt-br/marketplace/produtos/jornada-dos-7-chakras-vivencia-pratica-com-yoga/D81754728N"
+                    target="_blank" class="btn">INSCREVA-SE</a>
+            </div>
 
         </section>
 
-        
+
 
         <section id="acompanhamento" class="">
 
@@ -390,7 +390,7 @@
             </ul>
         </section>
 
-        
+
 
         <section id="investimento" class="shadow-lg container">
             <div class="container text-center">
@@ -424,54 +424,7 @@
             </div>
         </section>
 
-
-
-        <!-- <section class="quem-sou">
-
-            <div class="content">
-                <img src="{{ Vite::asset('resources/imagens/fotoinstrutora.png') }}" alt="Foto da instrutora">
-
-                <div class="textoQuemSou">
-                    <h2>QUEM SOU</h2>
-
-                    <P>Desde 2004 leciona e pratica <strong>Yoga</strong></P>
-                    <P>Praticante de Artes Marciais e estudante de várias filosofias orientais, encontrou no Yoga o
-                        seu
-                        caminho de vida. </P>
-                    <P>Idealizadora e coordenadora do Metodo DespertarYoga desde 2019.</P>
-                    <P>Bacharel em Educação Física, especialista em Reabilitação, NEUROCIENCIA, Docência da
-                        Meditação,
-                        Bioenergetica e Terapeuta corporal e energetica.</P>
-                    <P> <strong>Minha experiência </strong></P>
-                    <P>Quando adquirimos uma aula ou um livro, não é só pelo conteúdo escrito ali presente, mas
-                        estamos adquirindo as vivencias e experiencias desse professor.</P>
-                    <P>As culturas orientais tem um grande respeito pelo professor, por ele poder dedicar a vida a
-                        ensinar. Por isso conto aqui parte da minha história.</P>
-                    <P>Comecei a dar aulas de artes maciais aos 16 anos, antes disso estive vivendo o movimento
-                        desde os 5 anos, onde comecei nas aulas de artes maciais, karate (arte marcial japonesa), já
-                        naquela
-                        época tínhamos que entrar no Dojo (local da aula), com respeito e em silencio, cumprimentar
-                        o
-                        Mestre, e no fim da aula existia alguns minutos onde sentávamos para meditar, fechar os
-                        olhos e
-                        silenciar.</P>
-                    <P>Aos cinco anos era o que eu ouvia e fazia, se entendia era outra história, só voltando no
-                        passado e me perguntando. Mas eu fazia o que me pediam, e gostava. Cumprimentávamos o mestre
-                        e os alunos
-                        mais antigos (hierarquia) e saiamos.</P>
-                    <P> Nesse espaço de tempo, minha família também frequentava a igreja evangélica, e sempre
-                        tínhamos muitos momentos de “oração”, e a orações de pedinte era o que nos ensinavam, mas eu
-                        sempre
-                        ia observando o que acontecia quando eu estava de olhos fechados, o que acontecia com minha
-                        mente, depois de um tempo e pelas dificuldades da vida, eu também comecei a fazer as orações
-                        de
-                        pedinte, mas nunca perdia o costume de ficar com meu silencio interior.</P>
-
-                </div>
-
-            </div>
-        </section> -->
-
+        @auth
         <section id="aulasGratis" class="p-3 m-5">
             <h2 class="display-2 d-flex vw-100 mt-5 mb-5 justify-content-center">AULAS GRÁTIS</h2>
             <div class="grid-aulasGratis">
@@ -521,6 +474,7 @@
             </div>
         </section>
 
+        @endauth
         <section id="cortesLivesVideos" class="p-3">
 
             <h2 class="display-2 d-flex vw-100 mt-5 mb-5 justify-content-center">CORTES, LIVES E VÍDEOS GRATIS</h2>

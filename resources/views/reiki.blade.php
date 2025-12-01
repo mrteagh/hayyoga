@@ -1,7 +1,7 @@
-<x-layout>
-    
+<x-layout :showLoginModal="$showLoginModal ?? ($errors->any() ? true : false)">
+
     @vite(['resources/css/stylereiki.css'])
-    
+
     <body>
 
         <section class="fotoHeader">
@@ -117,7 +117,7 @@
                     <div class="cards">
 
                         <div class="card1">
-                            
+
                             <img src="{{ Vite::asset('resources/imagens/passe.jpg') }}" alt="Descrição da imagem">
                             <div class="card1-content">
                                 <h2>Beneficios do Reiki</h2>
@@ -242,7 +242,7 @@
                         </div>
 
                         <div class="card2">
-                            
+
                             <img src="{{ Vite::asset('resources/imagens/impsicaodemaos.jpg') }}" alt="Descrição da imagem">
                             <div class="card2-content">
                                 <h2>Como se tornar</h2>
@@ -292,7 +292,7 @@
                     <div class="cards2">
 
                         <div class="card3">
-                            
+
                             <img src="{{ Vite::asset('resources/imagens/reiki7.jpeg') }}" alt="Descrição da imagem">
                             <div class="card3-content">
                                 <h2>Quem pode participar</h2>
@@ -370,7 +370,7 @@
                     <div class="cards3">
 
                         <div class="card5">
-                            
+
                             <img src="{{ Vite::asset('resources/imagens/bambu.jpg') }}" alt="Descrição da imagem">
                             <div class="card5-content">
                                 <h2>Nivel I <br>
@@ -789,44 +789,6 @@
                 </div>
 
 
-
-                <!-- <section class="quem-sou">
-                    <h2>QUEM SOU</h2>
-                    <div class="content">
-                        <img src="{{ Vite::asset('resources/imagens/fotoinstrutora.png') }}">
-                        <p>
-                            Desde 2004 leciona e pratica Yoga
-                            Praticante de Artes Marciais e estudante de várias filosofias orientais, encontrou no Yoga o seu
-                            caminho de vida. <br>
-                            Idealizadora e coordenadora do Metodo DespertarYoga desde 2019. <br>
-                            Bacharel em Educação Física, especialista em Reabilitação, NEUROCIENCIA, Docência da Meditação,
-                            Bioenergetica e Terapeuta corporal e energetica. <br>
-                            <strong>Minha experiência </strong> <br>
-                            Quando adquirimos uma aula ou um livro, não é só pelo conteúdo escrito ali presente, mas estamos
-                            adquirindo as vivencias e experiencias desse professor. <br>
-                            As culturas orientais tem um grande respeito pelo professor, por ele poder dedicar a vida a
-                            ensinar.
-                            Por isso conto aqui parte da minha história. <br>
-                            Comecei a dar aulas de artes maciais aos 16 anos, antes disso estive vivendo o movimento desde
-                            os 5
-                            anos, onde comecei nas aulas de artes maciais, karate (arte marcial japonesa), já naquela época
-                            tínhamos que entrar no Dojo (local da aula), com respeito e em silencio, cumprimentar o Mestre,
-                            e no
-                            fim da aula existia alguns minutos onde sentávamos para meditar, fechar os olhos e silenciar.
-                            Aos
-                            cinco anos era o que eu ouvia e fazia, se entendia era outra história, só voltando no passado e
-                            me
-                            perguntando. Mas eu fazia o que me pediam, e gostava. Cumprimentávamos o mestre e os alunos mais
-                            antigos (hierarquia) e saiamos. <br>
-                            Nesse espaço de tempo, minha família também frequentava a igreja evangélica, e sempre tínhamos
-                            muitos momentos de “oração”, e a orações de pedinte era o que nos ensinavam, mas eu sempre ia
-                            observando o que acontecia quando eu estava de olhos fechados, o que acontecia com minha mente,
-                            depois de um tempo e pelas dificuldades da vida, eu também comecei a fazer as orações de
-                            pedinte,
-                            mas nunca perdia o costume de ficar com meu silencio interior.
-                        </p>
-                    </div>
-                </section> -->
                 <section class="testemunha">
 
                     <h3>DEPOIMENTOS</h3>
@@ -836,21 +798,6 @@
                         Seu navegador não suporta a tag de vídeo.
                     </video>
 
-                    <!--    
-                <div class="testimonial">                 
-                    <p>"Um alívio incrível"</p>
-                    <span>– Nome</span>
-                </div>
-                  <div class="testimonial">
-                    <img src="" alt="">
-                    <p>"Um feedback fantástico"</p>
-                    <span>– Nome</span>
-                </div>
-                <div class="testimonial">
-                    <p>"Uma avaliação positiva"</p>
-                    <span>– Nome</span>
-                </div>
-                -->
 
                 </section>
             </section>

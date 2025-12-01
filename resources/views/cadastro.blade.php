@@ -1,30 +1,30 @@
-   <x-layout>
-    
-   <div class="container">
-            <h1>Cadastro de Usuário</h1>
+<x-layout :showLoginModal="$showLoginModal ?? ($errors->any() ? true : false)">
 
-            @if(session('sucesso'))
-            <p style="color: green;">{{ session('sucesso') }}</p>
-            @endif
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
 
-            <form action="{{ route('cadastro.salvar') }}" method="POST">
-                @csrf
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="name" required>
+        @if(session('sucesso'))
+        <p style="color: green;">{{ session('sucesso') }}</p>
+        @endif
 
-               <label for="email">E-mail:</label>
-               <input type="email" id="email" name="email" required>
+        <form action="{{ route('cadastro.salvar') }}" method="POST">
+            @csrf
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="name" required>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="password" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="confirmar-senha">Confirmar Senha:</label>
-                <input type="password" id="confirmar-senha" name="password-senha" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="password" required>
 
-               <button type="submit">Cadastrar</button>
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input type="password" id="confirmar-senha" name="password-senha" required>
 
-                <a href="/">Sair</a>
+            <button type="submit">Cadastrar</button>
 
-            </form>
-        </div>
-        </x-layout>
+            <a href="/">Sair</a>
+
+        </form>
+    </div>
+</x-layout>

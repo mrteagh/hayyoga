@@ -100,25 +100,6 @@
                 </div>
             </section>
 
-
-
-
-            <!--
-        <section class="testemunha">
-            <div class="testimonial">
-                <p>"Um alívio incrível"</p>
-                <span>– Nome</span>
-            </div>
-            <div class="testimonial">
-                <p>"Um feedback fantástico"</p>
-                <span>– Nome</span>
-            </div>
-            <div class="testimonial">
-                <p>"Uma avaliação positiva"</p>
-                <span>– Nome</span>
-            </div>
-        </section>-->
-
         </main>
 
         <script>

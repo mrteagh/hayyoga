@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout :showLoginModal="$showLoginModal ?? ($errors->any() ? true : false)">
     <div class="container-body">
         <div class="register-container">
 

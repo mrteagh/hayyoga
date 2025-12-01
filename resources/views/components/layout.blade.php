@@ -14,11 +14,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
    @vite([
-    'resources/css/app.css',
+    'resources/css/styleLayout.css',
     'resources/js/app.js',
     'resources/imagens/logoheader.jpeg',
     'resources/css/styleMain.css',
-    'resources/css/styleLayout.css',
+    
     'resources/css/register.css'
 ])
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">

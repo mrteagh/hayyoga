@@ -1,4 +1,4 @@
-gitdocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     const modal = document.getElementById("loginModal");
 
