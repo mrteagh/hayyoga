@@ -4,7 +4,7 @@
 
     <body>
 
-        <section class="fotoHeader">
+        <!-- <section class="fotoHeader">
             <div class="juVermelho">
                 <img src="{{Vite::asset('resources/imagens/juVermelho.png')}}" alt="Imagem de uma Yogui praticando assanas">
             </div>
@@ -29,7 +29,7 @@
                     <div class="caixa">
                         <img src="{{Vite::asset('resources/imagens/hay_reiki_mao1.png')}}" alt="Seu navegador nao carrega esta imagem">
                     </div>
-                </a>
+                </a> -->
 
                 <section class="hero">
                     <div class="overlay">
